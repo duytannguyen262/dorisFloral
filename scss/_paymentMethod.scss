@@ -1,0 +1,17 @@
+.paymentMethod {
+  &-item {
+    display: flex;
+    align-items: center;
+
+    gap: 0 10px;
+
+    margin-top: 5px;
+    & > p {
+      font-family: $podkova;
+      font-size: 18px;
+      line-height: 20px;
+
+      color: #323232;
+    }
+  }
+}

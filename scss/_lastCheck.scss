@@ -1,0 +1,96 @@
+.lastCheck {
+  &-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+    justify-content: space-between;
+  }
+
+  &-img {
+    display: flex;
+    align-items: center;
+
+    & > div {
+      width: 150px;
+      height: 150px;
+      margin-left: 20px;
+    }
+
+    & > p {
+      font-family: $podkova;
+      font-size: 24px;
+      line-height: 27px;
+      margin-left: 22px;
+    }
+  }
+
+  &-desc {
+    font-size: 18px;
+    line-height: 21px;
+
+    & > button {
+      width: 100%;
+      font-size: 24px;
+      line-height: 28px;
+      color: #ffffff;
+
+      padding: 9px 68px;
+
+      border: none;
+      background: #301d58;
+      border-radius: 9px;
+    }
+
+    &__first-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      gap: 0 70px;
+
+      margin-bottom: 20px;
+    }
+
+    &__row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0 80px;
+
+      font-family: $podkova;
+      font-size: 14px;
+      line-height: 16px;
+
+      border-bottom: 1px dashed #b6b6b6;
+
+      & > p {
+        padding-bottom: 8px;
+        margin-top: 3px;
+      }
+    }
+
+    &__col {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      & > p {
+        margin-top: 5px;
+        font-size: 18px;
+        line-height: 21px;
+      }
+    }
+  }
+}
+
+//Responsive
+@media screen and (max-width: 800px) {
+  .lastCheck {
+    &-container {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}

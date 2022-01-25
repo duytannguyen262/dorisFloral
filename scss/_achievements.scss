@@ -1,0 +1,48 @@
+.achievements {
+  &-wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-image: url(../assets/images/achievementBg.png);
+  }
+
+  &-container {
+    margin: 0 auto;
+    max-width: 964px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 180px;
+  }
+
+  &-item {
+    color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    &__number {
+      font-family: $cinzel;
+      font-size: 36px;
+      line-height: 49px;
+      margin-bottom: 5px;
+    }
+
+    &__text {
+      font-family: $cardo;
+      font-size: 12px;
+      line-height: 16px;
+      white-space: nowrap;
+    }
+  }
+}
+
+//Responsive
+@media screen and (max-width: 1000px) {
+  .achievements-container {
+    flex-wrap: wrap;
+  }
+}

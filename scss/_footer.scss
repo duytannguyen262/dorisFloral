@@ -1,0 +1,158 @@
+.footer {
+  &-wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    background: rgba(38, 32, 101, 1);
+  }
+
+  &-container {
+    max-width: 956px;
+    margin: 0 auto;
+  }
+
+  &-info {
+    display: flex;
+    justify-content: center;
+
+    padding: 20px 0;
+
+    gap: 0 90px;
+
+    &__contact {
+      &-header {
+        background: -webkit-linear-gradient(#ffbc00 30%, #a26227);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        font-size: 2-px;
+        line-height: 18px;
+
+        white-space: nowrap;
+      }
+
+      &-content {
+        font-size: 14px;
+        color: #ffffff;
+        line-height: 147.23%;
+
+        margin-top: 5px;
+
+        cursor: pointer;
+      }
+
+      &-email {
+        width: 365px;
+
+        margin-top: 8px;
+        margin-bottom: 20px;
+      }
+
+      &-social {
+        display: flex;
+        align-items: center;
+
+        gap: 0 10px;
+
+        & > img {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  &-email {
+    &__input {
+      width: 260px;
+      height: 32px;
+
+      border-radius: 3px;
+
+      padding-left: 10px;
+
+      box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+      border: solid 1.5px transparent;
+      background-image: linear-gradient(
+          rgba(255, 255, 255, 0),
+          rgba(255, 255, 255, 0)
+        ),
+        linear-gradient(to top, rgba(162, 97, 39, 1), rgba(255, 222, 128, 1));
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+      box-shadow: 2px 1000px 1px #fff inset;
+    }
+
+    &__btn {
+      margin-left: 10px;
+
+      width: 86px;
+      height: 32px;
+
+      font-size: 14px;
+      line-height: 88.7%;
+      color: #ffffff;
+
+      border-radius: 3px;
+
+      box-shadow: 0 0 6px 0 rgba(255, 222, 128, 1);
+      border: solid 1px transparent;
+      background-image: linear-gradient(
+          rgba(255, 255, 255, 0),
+          rgba(255, 255, 255, 0)
+        ),
+        linear-gradient(to top, rgba(162, 97, 39, 1), rgba(255, 222, 128, 1));
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+      box-shadow: 2px 1000px 1px #301d58 inset;
+    }
+  }
+
+  &-copyright {
+    color: rgba(174, 206, 225, 1);
+    font-family: $rozha;
+    font-size: 12px;
+    line-height: 17px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-top: 0.5px solid #c2c1c1;
+
+    padding-top: 8px;
+    padding-bottom: 20px;
+  }
+}
+
+//Responsive
+@media screen and (max-width: 930px) {
+  .footer {
+    &-info {
+      flex-direction: column;
+      padding: 20px 20px;
+
+      &__contact {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer {
+    &-info {
+      &__contact {
+        &-email {
+          width: 100%;
+
+          & > input {
+            width: 75%;
+          }
+
+          & > button {
+            width: 20%;
+          }
+        }
+      }
+    }
+  }
+}

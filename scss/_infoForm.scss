@@ -1,0 +1,74 @@
+.paymentInfo-form {
+  &__field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+
+    width: 735px;
+
+    & > input {
+      width: 547px;
+
+      border: 1px solid #a8a8a8;
+      border-radius: 2px;
+
+      font-family: $podkova;
+      font-size: 18px;
+      line-height: 20px;
+      color: #a0a0a0;
+
+      padding: 5px 10px;
+    }
+
+    & > p {
+      font-family: $podkova;
+      font-size: 18px;
+      line-height: 20px;
+    }
+  }
+
+  &__select {
+    width: 547px;
+
+    & > select {
+      width: 100%;
+
+      border: 1px solid #a8a8a8;
+      border-radius: 2px;
+
+      font-family: $podkova;
+      font-size: 18px;
+      line-height: 20px;
+
+      padding: 5px 10px;
+
+      color: #a0a0a0;
+    }
+  }
+}
+
+//Responsive
+@media screen and (max-width: 765px) {
+  .paymentInfo-form {
+    padding: 10px;
+    &__field {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      width: 100%;
+
+      & > p {
+        display: block;
+      }
+
+      & > input {
+        width: 100%;
+      }
+    }
+
+    &__select {
+      width: 100%;
+    }
+  }
+}

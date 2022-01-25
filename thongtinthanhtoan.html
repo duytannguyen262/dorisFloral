@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin thanh toán</title>
+    <link rel="stylesheet" href="./scss/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Arimo:wght@400;700&family=Artifika&family=Asap&family=Bellota:wght@400;700&family=Cardo:wght@400;700&family=Cinzel&family=Podkova:wght@400;700&family=Rozha+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="header-top_container">
+                <ul class="header-top_social">
+                    <li class="header-top_social-icon">
+                        <img src="./assets/icons/facebook.svg" alt="facebook" />
+                    </li>
+                    <li class="header-top_social-icon">
+                        <img src="./assets/icons/instagram.svg" alt="instagram" />
+                    </li>
+                    <li class="header-top_social-icon">
+                        <img src="./assets/icons/twitter.svg" alt="twitter" />
+                    </li>
+                </ul>
+
+                <ul class="header-top_contact">
+                    <li class="header-top_contact-item">
+                        <img src="./assets/icons/call.svg" alt="call" />
+                        <p class="phone-desc">0961 780 910</p>
+                    </li>
+                    <li class="header-top_contact-item">
+                        <img src="./assets/icons/email.svg" alt="email" />
+                        <p class="email-desc">Dorisfloral@gmail.com</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header-container">
+            <div class="header-menu">
+                <img srcSet="./assets/images/logo.png 2x" alt="" class="header-logo" />
+                <ul class="menu">
+                    <li class="menu-item">
+                        Trang chủ
+                    </li>
+                    <li class="menu-item">
+                        Cửa hàng
+                    </li>
+                    <li class="menu-item">
+                        Sản phẩm
+                    </li>
+                    <li class="menu-item">
+                        Dịch vụ
+                    </li>
+                    <li class="menu-item">
+                        Liên hệ
+                    </li>
+                </ul>
+                <ul class="menu-icons">
+                    <li class="menu-icon">
+                        <div>
+                            <img src="./assets/icons/user 1.svg" alt="user" />
+                        </div>
+                    </li>
+                    <li class="menu-icon">
+                        <div>
+                            <img src="./assets/icons/search 1.svg" alt="search" />
+                        </div>
+                    </li>
+                    <li class="menu-icon">
+                        <div>
+                            <img src="./assets/icons/bag.svg" alt="bag" />
+                            <div class="menu-icon__quantity">1</div>
+                        </div>
+                    </li>
+                    <label for="nav__mobile-input" class="menu-icon burger-btn">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
+                            class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512">
+                            <path fill="currentColor"
+                                d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                            </path>
+                        </svg>
+                    </label>
+                    <input hidden type="checkbox" id='nav__mobile-input' class='nav__input'>
+
+                    <label for="nav__mobile-input" class="nav__overlay"></label>
+
+                    <nav class='nav__mobile'>
+                        <label for="nav__mobile-input" class="nav__mobile-close">
+                            <svg for="nav__mobile-input" aria-hidden="true" focusable="false" data-prefix="fas"
+                                data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
+                                <path fill="currentColor"
+                                    d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
+                                </path>
+                            </svg>
+                        </label>
+                        <ul class="nav__mobile-list">
+                            <li class="nav__mobile-item">
+                                Trang chủ
+                            </li>
+                            <li class="nav__mobile-item">
+                                Cửa hàng
+                            </li>
+                            <li class="nav__mobile-item">
+                                Sản phẩm
+                            </li>
+                            <li class="nav__mobile-item">
+                                Dịch vụ
+                            </li>
+                            <li class="nav__mobile-item">
+                                Liên hệ
+                            </li>
+                        </ul>
+                    </nav>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="paymentInfo-wrapper">
+        <div class="paymentInfo-container">
+            <div>
+                <h3 class="paymentInfo-h3">Địa chỉ giao hàng</h3>
+                <form class="paymentInfo-form">
+                    <div class="paymentInfo-form__field">
+                        <p>Họ và tên</p>
+                        <input type="text" placeholder="Họ và tên người nhận" />
+                    </div>
+                    <div class="paymentInfo-form__field">
+                        <p>Email</p>
+                        <input type="text" placeholder="Email" />
+                    </div>
+                    <div class="paymentInfo-form__field">
+                        <p>Số điện thoại</p>
+                        <input type="text" placeholder="Số điện thoại" />
+                    </div>
+                    <div class="paymentInfo-form__field">
+                        <p>Tỉnh/Thành phố</p>
+                        <div class="paymentInfo-form__select">
+                            <select>
+                                <option value="service">Tỉnh/Thành phố</option>
+                                <option value="service2">TP.HCM</option>
+                                <option value="service3">Hà Nội</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="paymentInfo-form__field">
+                        <p>Quận/Huyện</p>
+                        <div class="paymentInfo-form__select disabled">
+                            <select>
+                                <option value="service">Quận/Huyện</option>
+                                <option value="service2">Quận Phú Nhuận</option>
+                                <option value="service3">Quận Gò Vấp</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="paymentInfo-form__field">
+                        <p>Phường/Xã</p>
+                        <div class="paymentInfo-form__select disabled">
+                            <select>
+                                <option value="service">Phường/Xã</option>
+                                <option value="service2">Phường 6</option>
+                                <option value="service3">Phường 5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="paymentInfo-form__field">
+                        <p>Địa chỉ cụ thể</p>
+                        <input type="text" placeholder="Nhập địa chỉ nhận hàng" />
+                    </div>
+                    <div class="paymentInfo-form__field">
+                        <p>Thời gian cụ thể</p>
+                        <input type="text" placeholder="Nhập thời gian nhận hàng mong muốn" />
+                    </div>
+                </form>
+            </div>
+            <div>
+                <h3 class="paymentInfo-h3">PHƯƠNG THỨC THANH TOÁN</h3>
+                <ul class="paymentMethod">
+                    <li class="paymentMethod-item">
+                        <input value="1" type="radio" />
+                        <img src="./assets/icons/momo.png" alt="" />
+                        <p>Ví momo</p>
+                    </li>
+                    <li class="paymentMethod-item">
+                        <input value="2" type="radio" />
+                        <img src="./assets/icons/atm.png" alt="" />
+                        <p>ATM / Internet Banking</p>
+                    </li>
+                    <li class="paymentMethod-item">
+                        <input value="3" type="radio" />
+                        <img src="./assets/icons/visa.png" alt="" />
+                        <p>/</p>
+                        <img src="./assets/icons/jcb.png" alt="" />
+                        <p>/</p>
+                        <img src="./assets/icons/mastercard.png" alt="" />
+                    </li>
+                    <li class="paymentMethod-item">
+                        <input value="4" type="radio" />
+                        <p>Thanh toán bằng tiền mặt khi nhận hàng</p>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="paymentInfo-h3">KIỂM TRA LẠI ĐƠN HÀNG</h3>
+                <div class="lastCheck-container">
+                    <div class="lastCheck-img">
+                        <div>
+                            <img src="./assets/images/flower3.png" alt="" />
+                        </div>
+                        <p>The Cactus Foxlove</p>
+                    </div>
+                    <div class="lastCheck-desc">
+                        <div class="lastCheck-desc__first-row">
+                            <div class="lastCheck-desc__col">
+                                <p>Đơn giá</p>
+                                <p>$195.00</p>
+                            </div>
+                            <div class="lastCheck-desc__col">
+                                <p>Số lượng</p>
+                                <p>1</p>
+                            </div>
+                            <div class="lastCheck-desc__col">
+                                <p>Tổng cộng</p>
+                                <p style="color: red">$195.00</p>
+                            </div>
+                        </div>
+                        <div class="lastCheck-desc__row">
+                            <p>Thành tiền</p>
+                            <p>$195.00</p>
+                        </div>
+                        <div class="lastCheck-desc__row">
+                            <p>Phí vận chuyển (Giao hàng tiêu chuẩn)</p>
+                            <p>$195.00</p>
+                        </div>
+                        <div class="lastCheck-desc__row" style="border: none">
+                            <p style="
+                          font-weight: 700;
+                          font-size: 18px;
+                          line-height: 20px;
+                        ">
+                                Tổng tiền (Đã bao gồm VAT)
+                            </p>
+                            <p style="
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 20px;
+                        color: red;
+                      ">
+                                $195.00
+                            </p>
+                        </div>
+                        <button>Xác nhận thanh toán</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer-wrapper">
+        <div class="footer-container">
+            <div class="footer-info">
+                <div class="footer-info__contact">
+                    <h2 class="footer-info__contact-header">Thông tin liên hệ</h2>
+                    <ul class="footer-info__contact-content">
+                        <li>Add: 656 Âu Cơ, Phường 3, Quận Bình Tân, Tp.HCM</li>
+                        <li>Tel: 0961780910</li>
+                        <li>Mail: Dorisfloral@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="footer-info__contact">
+                    <h2 class="footer-info__contact-header">Chăm sóc khách hàng</h2>
+                    <ul class="footer-info__contact-content">
+                        <li>Liên hệ với chúng tôi</li>
+                        <li>Câu hỏi thường gặp</li>
+                        <li>Phương thức thanh toán</li>
+                    </ul>
+                </div>
+                <div class="footer-info__contact">
+                    <h2 class="footer-info__contact-header">Đăng ký Mail</h2>
+                    <p class="footer-info__contact-content">
+                        Để nhận thông tin mới nhất về sản phẩm mới và khuyến mãi
+                    </p>
+                    <div class="footer-info__contact-email">
+                        <input type="text" class="footer-email__input" placeholder="Nhập địa chỉ email..." />
+                        <button class="footer-email__btn">Đăng ký</button>
+                    </div>
+                    <div class="footer-info__contact-social">
+                        <img src="./assets/icons/facebook 2.svg" alt="facebook2" />
+                        <img src="./assets/icons/instagram 2.svg" alt="instagram" />
+                        <img src="./assets/icons/youtube.svg" alt="youtube" />
+                        <img src="./assets/icons/twitter 2.svg" alt="twitter2" />
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                @Copyright C 2021 DorisFloral.com
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

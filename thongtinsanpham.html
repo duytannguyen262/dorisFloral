@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin sản phẩm</title>
+    <link rel="stylesheet" href="./scss/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Arimo:wght@400;700&family=Artifika&family=Asap&family=Bellota:wght@400;700&family=Cardo:wght@400;700&family=Cinzel&family=Podkova:wght@400;700&family=Rozha+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="header-top_container">
+                <ul class="header-top_social">
+                    <li class="header-top_social-icon">
+                        <img src="./assets/icons/facebook.svg" alt="facebook" />
+                    </li>
+                    <li class="header-top_social-icon">
+                        <img src="./assets/icons/instagram.svg" alt="instagram" />
+                    </li>
+                    <li class="header-top_social-icon">
+                        <img src="./assets/icons/twitter.svg" alt="twitter" />
+                    </li>
+                </ul>
+
+                <ul class="header-top_contact">
+                    <li class="header-top_contact-item">
+                        <img src="./assets/icons/call.svg" alt="call" />
+                        <p class="phone-desc">0961 780 910</p>
+                    </li>
+                    <li class="header-top_contact-item">
+                        <img src="./assets/icons/email.svg" alt="email" />
+                        <p class="email-desc">Dorisfloral@gmail.com</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header-container">
+            <div class="header-menu">
+                <img srcSet="./assets/images/logo.png 2x" alt="" class="header-logo" />
+                <ul class="menu">
+                    <li class="menu-item">
+                        Trang chủ
+                    </li>
+                    <li class="menu-item">
+                        Cửa hàng
+                    </li>
+                    <li class="menu-item">
+                        Sản phẩm
+                    </li>
+                    <li class="menu-item">
+                        Dịch vụ
+                    </li>
+                    <li class="menu-item">
+                        Liên hệ
+                    </li>
+                </ul>
+                <ul class="menu-icons">
+                    <li class="menu-icon">
+                        <div>
+                            <img src="./assets/icons/user 1.svg" alt="user" />
+                        </div>
+                    </li>
+                    <li class="menu-icon">
+                        <div>
+                            <img src="./assets/icons/search 1.svg" alt="search" />
+                        </div>
+                    </li>
+                    <li class="menu-icon">
+                        <div>
+                            <img src="./assets/icons/bag.svg" alt="bag" />
+                            <div class="menu-icon__quantity">1</div>
+                        </div>
+                    </li>
+                    <label for="nav__mobile-input" class="menu-icon burger-btn">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
+                            class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512">
+                            <path fill="currentColor"
+                                d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                            </path>
+                        </svg>
+                    </label>
+                    <input hidden type="checkbox" id='nav__mobile-input' class='nav__input'>
+
+                    <label for="nav__mobile-input" class="nav__overlay"></label>
+
+                    <nav class='nav__mobile'>
+                        <label for="nav__mobile-input" class="nav__mobile-close">
+                            <svg for="nav__mobile-input" aria-hidden="true" focusable="false" data-prefix="fas"
+                                data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
+                                <path fill="currentColor"
+                                    d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
+                                </path>
+                            </svg>
+                        </label>
+                        <ul class="nav__mobile-list">
+                            <li class="nav__mobile-item">
+                                Trang chủ
+                            </li>
+                            <li class="nav__mobile-item">
+                                Cửa hàng
+                            </li>
+                            <li class="nav__mobile-item">
+                                Sản phẩm
+                            </li>
+                            <li class="nav__mobile-item">
+                                Dịch vụ
+                            </li>
+                            <li class="nav__mobile-item">
+                                Liên hệ
+                            </li>
+                        </ul>
+                    </nav>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="product-info__wrapper">
+        <div class="product-info__container">
+            <img src="./assets/images/flower3.png" alt="" />
+            <div class="product-info__content">
+                <h1>Cactus Foxlove</h1>
+                <p class="product-info__content-feature">
+                    Được nhập khẩu trực tiếp từ Hà Lan
+                </p>
+                <p class="product-info__content-price">$195.00</p>
+                <p class="product-info__content-quantity">Số lượng</p>
+                <div class="quantity-btn">
+                    <button>-</button>
+                    <div>1</div>
+                    <button>+</button>
+                </div>
+                <div class="cta-btn">
+                    <button>Thêm vào giỏ hàng</button>
+                    <button>Mua ngay</button>
+                </div>
+                <div class="add-ons">
+                    <p>Add ons:</p>
+                    <div class="add-ons__products">
+                        <div class="add-ons__product">
+                            <div>
+                                <img src="./assets/images/teddy.png" alt="" />
+                            </div>
+                            <h3>Gấu Teddy</h3>
+                            <p>$20</p>
+                        </div>
+                        <div class="add-ons__product">
+                            <div>
+                                <img src="./assets/images/choco.png" alt="" />
+                            </div>
+                            <h3>Hộp Chocolate</h3>
+                            <p>$27</p>
+                        </div>
+                        <div class="add-ons__product">
+                            <div>
+                                <img src="./assets/images/cake.png" alt="" />
+                            </div>
+                            <h3>Birthday Cake</h3>
+                            <p>$42</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-info__content-desc">
+                    <h3>Mô tả sản phẩm:</h3>
+                    <p>
+                        Bó Cactus Foxlove sang trọng và lộng lẫy với những bông hoa Lam
+                        rực rỡ là lựa chọn hoàn hảo gửi đến người thân yêu trong ngày
+                        Valentine hoặc bất kỳ dịp đặc biệt nào trong năm.
+                    </p>
+                    <p>Miễn phí vận chuyển bán kính 5km khu vực TP.HCM</p>
+                    <p class="note">
+                        * Sản phẩm được chụp bởi nhân viên Doris Floral đảm bảo uy tín
+                        tuyệt đố
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="hot-products__container">
+        <div class="line" style='background-color: white'></div>
+        <h1 class="title" style='background-color: white'>
+            Sản Phẩm Liên Quan
+        </h1>
+
+        <div class="slider-btns">
+            <button class="slider-btn" style='background-color: #EBEBEB'>
+                <img src="./assets/icons/ArrowLeft.svg" alt="arrowLeft" />
+            </button>
+            <button class="slider-btn" style='background-color: #262626'>
+                <img src="./assets/icons/ArrowRight.svg" alt="arrowRight" />
+            </button>
+        </div>
+
+        <div class="hot-products">
+            <div class="hot-item">
+                <div class="hot-item__img">
+                    <img src=./assets/images/flower8.png alt="img" />
+                    <button class='deals-unique unique__80'>
+                        -80%
+                    </button>
+                    <div class="actions">
+                        <button class="action-btn">
+                            <img src="./assets/icons/heart.svg" alt="heart" />
+                        </button>
+                        <button class="action-btn">
+                            <img src="./assets/icons/tocart.svg" alt="tocart" />
+                        </button>
+                        <button class="action-btn">
+                            <img src="./assets/icons/extend.svg" alt="extend" />
+                        </button>
+                    </div>
+                </div>
+                <div class="hot-item__info">
+                    <div>
+                        <p class="hot-item__category">Hộp Hoa</p>
+                        <h2 class="hot-item__name">Special Bouquet</h2>
+                        <p class="hot-item__price">$32.00</p>
+                    </div>
+                    <div class="hot-item__cart-btn">
+                        <img src="./assets/icons/cart.svg" alt="cart" />
+                    </div>
+                </div>
+            </div>
+            <div class="hot-item">
+                <div class="hot-item__img">
+                    <img src=./assets/images/flower11.png alt="img" />
+                    <button class='deals-unique unique__sale'>
+                        Sale
+                    </button>
+                    <div class="actions">
+                        <button class="action-btn">
+                            <img src="./assets/icons/heart.svg" alt="heart" />
+                        </button>
+                        <button class="action-btn">
+                            <img src="./assets/icons/tocart.svg" alt="tocart" />
+                        </button>
+                        <button class="action-btn">
+                            <img src="./assets/icons/extend.svg" alt="extend" />
+                        </button>
+                    </div>
+                </div>
+                <div class="hot-item__info">
+                    <div>
+                        <p class="hot-item__category">Hộp Hoa</p>
+                        <h2 class="hot-item__name">Pink Amaryllis</h2>
+                        <p class="hot-item__price">$50.00</p>
+                    </div>
+                    <div class="hot-item__cart-btn">
+                        <img src="./assets/icons/cart.svg" alt="cart" />
+                    </div>
+                </div>
+            </div>
+            <div class="hot-item">
+                <div class="hot-item__img">
+                    <img src=./assets/images/flower12.png alt="img" />
+                    <div class="actions">
+                        <button class="action-btn">
+                            <img src="./assets/icons/heart.svg" alt="heart" />
+                        </button>
+                        <button class="action-btn">
+                            <img src="./assets/icons/tocart.svg" alt="tocart" />
+                        </button>
+                        <button class="action-btn">
+                            <img src="./assets/icons/extend.svg" alt="extend" />
+                        </button>
+                    </div>
+                </div>
+                <div class="hot-item__info">
+                    <div>
+                        <p class="hot-item__category">Hộp Hoa</p>
+                        <h2 class="hot-item__name">Your Beloved</h2>
+                        <p class="hot-item__price">$85.00</p>
+                    </div>
+                    <div class="hot-item__cart-btn">
+                        <img src="./assets/icons/cart.svg" alt="cart" />
+                    </div>
+                </div>
+            </div>
+            <div class="hot-item">
+                <div class="hot-item__img">
+                    <img src=./assets/images/flower13.png alt="img" />
+                    <div class="actions">
+                        <button class="action-btn">
+                            <img src="./assets/icons/heart.svg" alt="heart" />
+                        </button>
+                        <button class="action-btn">
+                            <img src="./assets/icons/tocart.svg" alt="tocart" />
+                        </button>
+                        <button class="action-btn">
+                            <img src="./assets/icons/extend.svg" alt="extend" />
+                        </button>
+                    </div>
+                </div>
+                <div class="hot-item__info">
+                    <div>
+                        <p class="hot-item__category">Hộp Hoa</p>
+                        <h2 class="hot-item__name">Happy Anni</h2>
+                        <p class="hot-item__price">$62.00</p>
+                    </div>
+                    <div class="hot-item__cart-btn">
+                        <img src="./assets/icons/cart.svg" alt="cart" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer-wrapper">
+        <div class="footer-container">
+            <div class="footer-info">
+                <div class="footer-info__contact">
+                    <h2 class="footer-info__contact-header">Thông tin liên hệ</h2>
+                    <ul class="footer-info__contact-content">
+                        <li>Add: 656 Âu Cơ, Phường 3, Quận Bình Tân, Tp.HCM</li>
+                        <li>Tel: 0961780910</li>
+                        <li>Mail: Dorisfloral@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="footer-info__contact">
+                    <h2 class="footer-info__contact-header">Chăm sóc khách hàng</h2>
+                    <ul class="footer-info__contact-content">
+                        <li>Liên hệ với chúng tôi</li>
+                        <li>Câu hỏi thường gặp</li>
+                        <li>Phương thức thanh toán</li>
+                    </ul>
+                </div>
+                <div class="footer-info__contact">
+                    <h2 class="footer-info__contact-header">Đăng ký Mail</h2>
+                    <p class="footer-info__contact-content">
+                        Để nhận thông tin mới nhất về sản phẩm mới và khuyến mãi
+                    </p>
+                    <div class="footer-info__contact-email">
+                        <input type="text" class="footer-email__input" placeholder="Nhập địa chỉ email..." />
+                        <button class="footer-email__btn">Đăng ký</button>
+                    </div>
+                    <div class="footer-info__contact-social">
+                        <img src="./assets/icons/facebook 2.svg" alt="facebook2" />
+                        <img src="./assets/icons/instagram 2.svg" alt="instagram" />
+                        <img src="./assets/icons/youtube.svg" alt="youtube" />
+                        <img src="./assets/icons/twitter 2.svg" alt="twitter2" />
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                @Copyright C 2021 DorisFloral.com
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
